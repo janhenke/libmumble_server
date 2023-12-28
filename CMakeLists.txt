@@ -11,4 +11,13 @@ endif ()
 
 include(GNUInstallDirs)
 
+set(BOOST_REQUIRED_VERSION 1.71)
+
 add_subdirectory(mumble_protocol)
+
+add_subdirectory(library)
+
+add_subdirectory(app)
+
+enable_testing()
+add_subdirectory(test)
