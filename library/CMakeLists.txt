@@ -7,7 +7,10 @@ check_ipo_supported()
 add_library(
         mumble_server
         SHARED
-        dummy.cpp
+        pimpl.hpp
+        pimpl_impl.hpp
+        server.cpp
+        server.hpp
 )
 
 generate_export_header(mumble_server)

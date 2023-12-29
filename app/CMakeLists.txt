@@ -5,6 +5,14 @@ add_executable(
         main.cpp
 )
 
+set_target_properties(
+        mumble_server_app
+        PROPERTIES
+        CXX_STANDARD 23
+        CXX_STANDARD_REQUIRED ON
+        CXX_EXTENSIONS OFF
+)
+
 target_include_directories(
         mumble_server_app
         PRIVATE mumble_server
